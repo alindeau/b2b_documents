@@ -1,4 +1,4 @@
-# b2b_documents
+# b2b_documents (ESX, QbCore, Qbox)
 A modern document editor for FiveM (Qbox/ESX/QB) that will take your roleplay server to a next level.
 
 📄 b2b_documents
