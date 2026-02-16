@@ -1,0 +1,3 @@
+To change the items images: 
+document.png: filled document
+paper.png: empty document
