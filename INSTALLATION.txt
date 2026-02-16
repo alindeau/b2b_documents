@@ -1,0 +1,53 @@
+DÉPENDANCES:
+
+- ox_lib
+- ox_inventory
+- ox_target
+- MySQL
+- esx, qbcore ou qbox.
+
+
+INSTALLATION: 
+---------------------------------------------------------------------------------------------------------------------------------------------
+ÉTAPE 1
+
+Mettre le dossier "b2b_documents" dans le dossier ressources.
+Ne pas oublier de "ensure" la ressource dans votre server.cfg
+--
+ÉTAPE 2
+
+Aller à "ox_inventory/data/items.lua"
+Se rendre à la fin du fichier et coller ceci en respectant la synthaxe puis enregistrer: 
+
+    ['paper_blank'] = {
+        label = 'Papier Vierge',
+        weight = 10,
+        stack = false,
+        close = true,
+        client = {
+            image = 'nui://b2b_documents/web/images/paper.png', 
+            export = 'b2b_documents.usePaper' 
+        }
+    },
+
+    ['document'] = {
+        label = 'Document',
+        weight = 10,
+        stack = false,
+        close = true,
+        client = {
+            image = 'nui://b2b_documents/web/images/document.png', 
+            export = 'b2b_documents.usePaper' 
+        }
+    }
+
+--
+ÉTAPE 3
+
+Se rendre dans "b2b_documents/config.lua"
+Configurer vos préférences et les points de distribution de l'objet.
+Enregistrer
+
+
+
+
